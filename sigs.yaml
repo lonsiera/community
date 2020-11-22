@@ -504,6 +504,9 @@ sigs:
   - name: secrets-store-csi-driver
     description: |
       Integrates secrets stores with Kubernetes via a CSI volume.
+    contact:
+      slack: csi-secrets-store
+      mailing_list: https://groups.google.com/forum/#!forum/kubernetes-secrets-store-csi-driver
     owners:
     - https://raw.githubusercontent.com/kubernetes-sigs/secrets-store-csi-driver/master/OWNERS
   - name: service-accounts
@@ -535,9 +538,9 @@ sigs:
   meetings:
   - description: Regular SIG Meeting
     day: Monday
-    time: "14:00"
-    tz: UTC
-    frequency: biweekly/triweekly
+    time: "16:00"
+    tz: Poland
+    frequency: weekly
     url: https://zoom.us/j/944410904
     archive_url: https://docs.google.com/document/d/1RvhQAEIrVLHbyNnuaT99-6u9ZUMp7BfkPupT2LAZK7w/edit
   contact:
@@ -878,7 +881,7 @@ sigs:
   meetings:
   - description: Regular SIG Meeting
     day: Tuesday
-    time: "09:00"
+    time: "08:00"
     tz: PT (Pacific Time)
     frequency: biweekly
     url: https://zoom.us/j/916523531?pwd=eVhPNU5IQWtBYWhmT1N4T0V6bHZFZz09
@@ -984,6 +987,15 @@ sigs:
   - name: cluster-api-provider-nested
     owners:
     - https://raw.githubusercontent.com/kubernetes-sigs/cluster-api-provider-nested/master/OWNERS
+    meetings:
+    - description: Cluster API Provider Nested Office Hours
+      day: Tuesday
+      time: "10:00"
+      tz: PT (Pacific Time)
+      frequency: weekly
+      url: https://zoom.us/j/91929881559?pwd=WllxazhTUzBFN1BNWTRadTA3NGtQQT09
+      archive_url: https://docs.google.com/document/d/10aTeq2lhXW_3aFQAd_MdGjY8PtZPslKhZCCcXxFp3_Q/edit
+      recordings_url: https://www.youtube.com/playlist?list=PL69nYSiGNLP29D0nYgAGWt1ZFqS9Z7lw4
   - name: cluster-api-provider-openstack
     owners:
     - https://raw.githubusercontent.com/kubernetes-sigs/cluster-api-provider-openstack/master/OWNERS
@@ -1018,6 +1030,8 @@ sigs:
       url: https://zoom.us/j/612375927?pwd=MldxRnRSOExCVW1rbjM4ZzBSc3MvUT09
       archive_url: https://docs.google.com/document/d/1b_J0oBvi9lL0gsPgTOrCw1Zlx3e7BYEuXnB3d2S15pA/edit
   - name: image-builder
+    contact:
+      slack: image-builder
     owners:
     - https://raw.githubusercontent.com/kubernetes-sigs/image-builder/master/OWNERS
     meetings:
@@ -1716,6 +1730,9 @@ sigs:
       slack: node-problem-detector
     owners:
     - https://raw.githubusercontent.com/kubernetes/node-problem-detector/master/OWNERS
+  - name: noderesourcetopology-api
+    owners:
+    - https://raw.githubusercontent.com/kubernetes/noderesourcetopology-api/master/OWNERS
   - name: security-profiles-operator
     contact:
       slack: security-profiles-operator
@@ -1733,21 +1750,23 @@ sigs:
     - github: justaugustus
       name: Stephen Augustus
       company: VMware
-    - github: tpepper
-      name: Tim Pepper
-      company: VMware
+    - github: saschagrunert
+      name: Sascha Grunert
+      company: SUSE
     tech_leads:
     - github: alejandrox1
       name: Jorge Alarcon Ochoa
       company: Searchable AI
-    - github: saschagrunert
-      name: Sascha Grunert
-      company: SUSE
+    - github: hasheddan
+      name: Daniel Mangum
+      company: Upbound
     emeritus_leads:
     - github: calebamiles
       name: Caleb Miles
     - github: jdumars
       name: Jaice Singer DuMars
+    - github: tpepper
+      name: Tim Pepper
   meetings:
   - description: Regular SIG Meeting
     day: Tuesday
@@ -1853,8 +1872,8 @@ sigs:
   meetings:
   - description: Regular SIG Meeting
     day: Thursday
-    time: "17:30"
-    tz: UTC
+    time: "10:30"
+    tz: PT (Pacific Time)
     frequency: bi-weekly ([upcoming meeting dates](#upcoming-meeting-dates))
     url: https://zoom.us/j/94252896018?pwd=cTlMMlBoTHZqUEdjRm9VY2NWNUg5dz09
     archive_url: https://docs.google.com/a/bobsplanet.com/document/d/1hEpf25qifVWztaeZPFmjNiJvPo-5JX1z0LSvvVY5G2g/edit?usp=drive_web
@@ -2539,6 +2558,10 @@ workinggroups:
     identifying missing functionality and working together to design features to enable
     data protection support. Involves collaboration with multiple SIGs such as Apps
     and Storage.
+
+    This [work-in-progress doc](https://docs.google.com/document/d/1yHbW0hxHehQzdaL7AWSl81OW4f2OcBoskXTbezx92-U/edit#)
+    tracks missing building blocks we have identified and what we are working on to
+    fill the gaps.
 
   charter_link: charter.md
   stakeholder_sigs:
